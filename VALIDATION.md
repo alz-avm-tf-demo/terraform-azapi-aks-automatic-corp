@@ -48,9 +48,9 @@ The module copy included with the presentation must match the independently publ
 
 ## CI verification
 
-A workflow has been prepared to repeat credential-free formatting, initialization, validation, lint, and mock tests on Terraform 1.14.8 and 1.16.4 with locked AzAPI 2.12.0. It contains no Azure login, secrets, ordinary Terraform plan, or apply. It has not been installed: the publication login lacks GitHub workflow permission. The source release therefore does not claim a hosted CI result.
+The credential-free module workflow is installed in the independent module repository. It repeats formatting, initialization, validation, lint, and mock tests on Terraform 1.14.8 and 1.16.4 with locked AzAPI 2.12.0. It contains no Azure login, secrets, ordinary Terraform plan, or apply. Terraform matrix run 36990206303 passed on commit b7133679a89b1e2b36677400d659a03907c0f3f6. This release adds the native agent-setup job; its hosted run will be recorded after publication.
 
-The local results above establish only Terraform 1.16.4. Treat minimum-version and Linux compatibility as pending until the corresponding published CI run passes. CI provider downloads are not an air-gapped execution claim.
+The local results above establish the Windows Terraform 1.16.4 qualification. Hosted Linux CI establishes the credential-free Terraform 1.14.8/1.16.4 matrix for the published module commit named above. CI provider downloads are not an air-gapped execution claim.
 
 ## Remaining environment gates
 
