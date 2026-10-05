@@ -148,7 +148,7 @@ Qualification ran on October 1, 2026, using Terraform 1.16.4 on Windows AMD64, A
 
 Static checks and mocked tests cannot clear the environment gates. The platform owner must verify supported private Automatic networking, API/system/user subnet requirements, UDR/firewall compatibility, DNS, identity, region, quota, monitoring, and policy. Cleanup must account for `prevent_destroy` and service-managed resources.
 
-Hosted CI is active for the independent module repository. Terraform matrix run 36990206303 passed on commit b7133679a89b1e2b36677400d659a03907c0f3f6 for Terraform 1.14.8 and 1.16.4. This release adds the native agent-setup job; its hosted run will be recorded after publication. A later genuine clean recording must disclose the qualification work; this implementation is not already-filmed evidence.
+Hosted CI is active for the independent module repository. Terraform matrix run 36990206303 passed on commit b7133679a89b1e2b36677400d659a03907c0f3f6 for Terraform 1.14.8 and 1.16.4. The native agent-setup job passed in hosted run 37286068987 on commit 00787f59ac19e3db0c3869a96ff45805c6cb523d; the contracts (1.14.8), contracts (1.16.4), and agent-setup jobs all concluded success. A later genuine clean recording must disclose the qualification work; this implementation is not already-filmed evidence.
 
 ## Attribution
 
